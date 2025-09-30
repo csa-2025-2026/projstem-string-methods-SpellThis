@@ -17,6 +17,8 @@ public class Main
 
     stringManip(word3, word4);
    
+
+   System.out.println(removeStr())
     // write your code here
   }
 
@@ -44,8 +46,14 @@ public class Main
   */
   public static void stringManip(String s1, String s2)
   {
-  String s3 = new String ("")
-  String secondS = 
+    s1 = s1.toUpperCase();
+    s2 = s2.toUpperCase();
+    String s3;
+    s3 = s3substring(1, s2.length));
+    s3 = s2.substring (0,1);
+    output = s3
+    System.out.println(output);
+
 
 
   }
@@ -55,7 +63,23 @@ public class Main
   */
   public static String removeStr(String s1, String s2)
   {
-    String output = null;
+      String output;
+      String before;
+      String after;
+      int startOfs2 = s1.indexOf(s2);
+      int endOfs2 = startOfs2 + s2.length();
+      
+      before = s1.substring(0, startOfs2);
+      after = s1.substring(endOfs2);
+      output = before + after;
     return output;
+   
+
+
+
+
   }
+
+    
+  
 }
